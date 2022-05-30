@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lobster&family=Oleo+Script+Swash+Caps:wght@700&family=Poppins:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:hsl(0, 0%, 80%);
+}
+a {
+    text-decoration: none;
+}
+header {
+    height: 80px;
+    background: #433909;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.container {
+    
+    display: flex;   
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 4px;
+}
+
+.logo__navbar {
+    height: 60px;
+    width: 60px;
+}
+
+.section__one {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 300px;
+    width: 60%;
+    background-color: azure;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 80px;
+}
+.section__two {
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+    width: 60%;
+    background-color: azure;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.img__company {
+    height: 240px;
+    width: 240px;
+}
+
+.info__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.info__box h1 {
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.info__box p {
+    font-family: 'Josefin Sans', sans-serif;
+    max-width: 400px;
+
+}
+
+.btn__company1 {
+    border: 1.5px solid rgb(0, 0, 0);
+    color: white;
+    background-color: gray;
+    border-radius: 20px;
+    padding: 6px;
+    margin-right: 20px;
+    
+}
+.btn__company2 {
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    color: grey;
+    padding: 6px;
+    margin-right: 20px;
+}
+
+.section__two  {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu__navbar {
+    padding: 80px;
+    width: 100%;
+}
+
+.btn__hambur {
+    display: none;
+}
+.btn_container {
+    display: none;
+}
+
+.container__items {
+    padding:10px;
+}
+
+.list__navbar {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+    list-style: none;
+
+}
+.container__items {
+    display: flex;
+
+
+}
+
+.item__navbar a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+footer {
+    height: 300px;
+    width: 60%;
+    background-color: #433909;
+}
+
+
+@media screen and (max-width:1100px) {
+
+    .section__one {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;   
+        background-color: azure;   
+    }
+
+    .img__company {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .info__box h1 { 
+        padding-top:10px ;
+        margin: 0 auto;
+
+    }
+    .info__box p { 
+        font-size: 1rem;
+    }
+
+
+}
+@media screen and (max-width:660px) {
+    .btn__box {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn__hambur {
+        display:inline-block;
+    }
+    .btn_container {
+        display: inline-block;
+    }
+    .container__items {
+        display: none;
+    }
+    .btn__company1 {
+        text-align: center;
+    }
+    .btn__company2 {
+        text-align: center;
+    }
+
+
+}
+@media screen and (max-width:420px) {
+    .img__company {
+        height: 100%;
+        width: 100%;
+    }
+    .section__two p {
+        font-family: 'Josefin Sans', sans-serif; 
+        padding-left: 1px;
+        padding-right: 1px;
+    
+    }
+    .section__two {
+        display: flex;
+      
+        width: 60%;
+        background-color: azure;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .btn__company1 {
+        text-align: center;
+    }
+    .btn__company2 {
+        text-align: center;
+    }
+}
