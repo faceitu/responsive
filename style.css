@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lobster&family=Oleo+Script+Swash+Caps:wght@700&family=Poppins:ital@1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lobster&family=Oleo+Script+Swash+Caps:wght@700&family=Poppins:ital@1&family=Tiro+Kannada:ital@0;1&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +13,11 @@ a {
     text-decoration: none;
 }
 header {
-    height: 80px;
-    background: #433909;
+    height: 68px;
+    background: #3E5151;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
     display: flex;
     justify-content:space-between;
@@ -31,7 +34,7 @@ header {
 }
 
 .logo__navbar {
-    height: 60px;
+    height: 54px;
     width: 60px;
 }
 
@@ -44,7 +47,7 @@ header {
     background-color: azure;
     padding-left: 80px;
     padding-right: 80px;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .section__two {
     display: flex;
@@ -55,9 +58,32 @@ header {
     padding-left: 80px;
     padding-right: 80px;
 }
+.section__three {
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+    flex-direction: column;
+    width: 60%;
+    background-color: azure;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+}
+.section__four {
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+    flex-direction: column;
+    width: 60%;
+    background-color: azure;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
 .img__company {
-    height: 240px;
-    width: 240px;
+    height: 210px;
+    width: 210px;
 }
 
 .info__box {
@@ -73,6 +99,8 @@ header {
 .info__box p {
     font-family: 'Josefin Sans', sans-serif;
     max-width: 400px;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
 
 }
 
@@ -97,7 +125,19 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+.section__two p {
+    font-family:'Tiro Kannada', serif;
+    font-size: 1.4rem;
+    color: darkgray;
+    max-width: 600px;
+}
+.section__three .section__four h1, h5 {
+    padding-top: 10px;
+    color: darkgrey;
+}
+.section__three h1 {
+    padding-top: 10px;
+}
 .menu__navbar {
     padding: 80px;
     width: 100%;
@@ -132,9 +172,84 @@ header {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px;
 }
+
+.item__navbar a:hover {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    color:#433909;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.adv__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.img__cont {
+    width: 230px;
+    height: 230px;
+    text-align: center;
+    padding-top: 60px;
+   
+   
+}
+.img__cont:hover {
+    background: rgba( 201, 168, 141, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    
+}
+.img__cont p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.adv__img {
+    height: 60%;
+    width: 60%;
+ 
+}
+.signos {
+    height: 200px;
+}
+.pasos {
+    padding-top: 20px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+
+}
+.steep__work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    padding: 50px;
+    background: rgba( 201, 168, 141, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+}
+
+
+.steep__work p {
+    font-family: 'Josefin Sans';
+    padding-top: 20px;
+    text-align: center;
+    max-height: 100px;
+    
+}
+
+
 
 footer {
     height: 300px;
@@ -143,7 +258,7 @@ footer {
 }
 
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1260px) {
 
     .section__one {
         display: flex;
@@ -166,6 +281,12 @@ footer {
     .info__box p { 
         font-size: 1rem;
     }
+    .adv__box {
+        flex-direction: column;
+    }
+    .pasos {
+        flex-direction: column;
+    }
 
 
 }
@@ -173,6 +294,7 @@ footer {
     .btn__box {
         display: flex;
         flex-direction: column;
+        gap: 6px;
     }
     .btn__hambur {
         display:inline-block;
@@ -188,6 +310,12 @@ footer {
     }
     .btn__company2 {
         text-align: center;
+    }
+    .adv__box {
+        flex-direction: column;
+    }
+    .pasos {
+        flex-direction: column;
     }
 
 
@@ -216,5 +344,11 @@ footer {
     }
     .btn__company2 {
         text-align: center;
+    }
+    .adv__box {
+        flex-direction: column;
+    }
+    .pasos {
+        flex-direction: column;
     }
 }
